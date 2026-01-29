@@ -7,9 +7,9 @@ This practice project is a Flask-based web application that performs sentiment a
 
 The application consists of:
 
-	•	A sentiment analysis function that communicates with an external API.
-	•	A Flask server that exposes an endpoint for analyzing text.
-	•	A simple web interface to interact with the system.
+- A sentiment analysis function that communicates with an external API.
+- A Flask server that exposes an endpoint for analyzing text.
+- A simple web interface to interact with the system.
 
 The system identifies whether the given text has a positive, negative, or neutral sentiment and returns the corresponding score.
 
@@ -24,24 +24,48 @@ The system identifies whether the given text has a positive, negative, or neutra
   - requirements.txt
   - README.md
 
-# Technologies Used
-	•	Python 3.x
-	•	Flask
-	•	Requests
-	•	JSON
-	•	Watson NLP Sentiment API
+## Technologies Used
 
-# How the Code Works
+- Python 3.x  
+- Flask  
+- Requests  
+- JSON  
+- Watson NLP Sentiment API  
 
-# Sentiment Analyzer Function
-	•	Sends text to the Watson NLP API.
-	•	Extracts sentiment label and score.
-	•	Handles API errors by returning None.
+## How the Code Works
 
-# Flask Endpoint (/sentimentAnalyzer)
-	•	Accepts text as a query parameter.
-	•	Calls the sentiment analyzer function.
-	•	Formats and returns the result.
+### Sentiment Analyzer Function
 
+- Sends text to the Watson NLP API.  
+- Extracts sentiment label and score.  
+- Handles API errors by returning `None`.  
 
+### Flask Endpoint (`/sentimentAnalyzer`)
+
+- Accepts text as a query parameter.  
+- Calls the sentiment analyzer function.  
+- Formats and returns the result.  
+Follow the steps below to run the project locally.
+
+### Prerequisites
+Make sure you have Python 3 installed on your system.
+
+### Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>  
+   cd final_project
+
+3. Install the required dependencies:
+   ```bash
+   pip install flask requests
+
+5. Start the Flask server:
+   ```bash
+   python server.py
+
+7. Once the server is running, open your browser and navigate to the URL displayed in the terminal.
+
+8. Enter text in the input field to analyze sentiment.
   
